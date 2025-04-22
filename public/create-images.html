@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Placeholder</title>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="400" style="display: none;"></canvas>
+    <script>
+        // Create placeholder images for the sample events
+        function createPlaceholderImage(filename, color, text) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Fill background
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Add text
+            ctx.fillStyle = '#ffffff';
+            ctx.font = 'bold 40px Arial';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(text, canvas.width / 2, canvas.height / 2);
+            
+            // Convert to data URL
+            const dataUrl = canvas.toDataURL('image/jpeg');
+            
+            // Create download link
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = dataUrl;
+            link.textContent = `Download ${filename}`;
+            link.style.display = 'block';
+            link.style.margin = '10px';
+            document.body.appendChild(link);
+        }
+
+        // Create the three event images
+        createPlaceholderImage('tech-conference.jpg', '#3498db', 'Tech Conference 2025');
+        createPlaceholderImage('music-festival.jpg', '#e74c3c', 'Music Festival');
+        createPlaceholderImage('charity-run.jpg', '#2ecc71', 'Charity Run');
+        
+        // Also create a generic placeholder
+        createPlaceholderImage('event-placeholder.jpg', '#34495e', 'Event Placeholder');
+    </script>
+</body>
+</html>

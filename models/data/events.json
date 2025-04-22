@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Tech Conference 2025",
+    "date": "2025-06-15",
+    "time": "09:00",
+    "location": "Convention Center",
+    "description": "Annual technology conference featuring the latest innovations and industry trends.",
+    "image": "tech-conference.jpg",
+    "attendees": [
+      1,
+      2
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Music Festival",
+    "date": "2025-07-20",
+    "time": "16:00",
+    "location": "City Park",
+    "description": "A day of live music performances from local and international artists.",
+    "image": "music-festival.jpg",
+    "attendees": []
+  },
+  {
+    "id": 3,
+    "title": "Charity Run",
+    "date": "2025-08-05",
+    "time": "07:30",
+    "location": "Riverside Park",
+    "description": "5K charity run to raise funds for local community projects.",
+    "image": "charity-run.jpg",
+    "attendees": []
+  }
+]

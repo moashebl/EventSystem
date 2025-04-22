@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Test User",
+    "email": "test@example.com",
+    "password": "password123",
+    "registeredEvents": [
+      1
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mohamed Alaa",
+    "email": "mohamed.alaashebl5@gmail.com",
+    "password": "rYBuF4fZf8pAWTJ",
+    "registeredEvents": [
+      1
+    ]
+  }
+]
